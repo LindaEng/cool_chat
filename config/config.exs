@@ -7,6 +7,12 @@
 # General application configuration
 import Config
 
+config :cool_chat, CoolChat.Repo,
+  database: "cool_chat_repo",
+  username: "user",
+  password: "pass",
+  hostname: "localhost"
+
 config :cool_chat,
   ecto_repos: [CoolChat.Repo]
 

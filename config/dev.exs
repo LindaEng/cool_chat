@@ -2,13 +2,11 @@ import Config
 
 # Configure your database
 config :cool_chat, CoolChat.Repo,
-  database: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
   host: "localhost",
   database: "cool_chat_dev",
   port: 5432,
-  stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 20
 
